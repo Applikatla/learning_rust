@@ -1,0 +1,19 @@
+fn main() {
+    println!("Hello, world!");
+    new_fun(4);
+    some_function();
+}
+
+fn new_fun(mut x:i128) {
+    x = x + x;
+    println!("Value of changed x: {x}");
+}
+
+fn some_function() {
+    let _y = {
+        let mut x = 3;
+        x = x + 1;
+        println!("Value of x is: {x}")
+    };
+}
+
