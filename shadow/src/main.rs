@@ -7,5 +7,7 @@ fn main() {
         println!("X in another sope = {}", x);
 
     }
+    let str = "  ";
+    println!("lenght of str: {}", str.len());
     println!("Hello, world!");
 }
