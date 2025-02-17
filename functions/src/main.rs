@@ -2,6 +2,9 @@ fn main() {
     println!("Hello, world!");
     new_fun(4);
     some_function();
+    let x: i32;
+    x = function_with_return();
+    println!("Value of X is {x}");
 }
 
 fn new_fun(mut x:i128) {
@@ -17,3 +20,8 @@ fn some_function() {
     };
 }
 
+// functions with return 
+
+fn function_with_return() -> i32 {
+    return 5;
+}
