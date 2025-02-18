@@ -1,0 +1,28 @@
+Ownership in Rust (Core Concept)
+Ownership is Rust’s memory management model. Unlike languages with garbage collection (GC) (like Python or Java) or manual memory management (like C/C++), Rust enforces ownership rules at compile time to prevent memory leaks and data races.
+
+Ownership ensures: ✅ Memory safety without a garbage collector
+✅ Prevention of data races in multithreading
+✅ Efficient memory allocation and deallocation
+
+1. Ownership Rules
+Rust enforces three rules for ownership:
+
+1️⃣ Each value in Rust has a single owner
+2️⃣ When the owner goes out of scope, Rust automatically deallocates memory
+3️⃣ You can transfer ownership but cannot have multiple mutable owners
+
+❌ Rules for Mutable Borrowing:
+
+You can’t have multiple mutable references at the same time (prevents data races).
+You can’t mix mutable and immutable references.
+✔ Enforces safe concurrency without runtime checks.
+
+Summary
+✅ Ownership ensures memory safety without a garbage collector
+✅ Values have a single owner, and Rust automatically deallocates them
+✅ Moves (instead of copying) prevent double-free errors
+✅ Borrowing allows functions to access data without ownership transfer
+✅ Mutable references ensure controlled modifications
+
+Ownership is what makes Rust safe and efficient without needing a garbage collector. 🚀
