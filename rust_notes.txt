@@ -1,0 +1,165 @@
+copy types (we can copy)
+
+i32
+u64
+bool
+char
+f64
+
+ex:
+let a = 5;
+let b = a;
+
+move types (we can't copy value will move)
+
+String
+Vec<T>
+HashMap<K,V>
+Structs containing String/Vec
+
+ex:
+let v1 = vec![1, 2, 3];
+let v2 = v1;
+
+// v1 is no longer usable
+
+ <---------------------------------idea--------------------->
+Key Idea
+s1 → ownership moves
+&s1 → immutable borrow (read-only)
+&mut s1 → mutable borrow (can modify)
+
+Not quite. 😊
+
+It **does compile**, and it **does print `s1`**.
+
+Output:
+
+```text
+hello 5
+```
+
+---
+
+Let's see why.
+
+```rust
+let s1 = String::from("hello");
+
+let len = calculate_length(&s1);
+```
+
+Here:
+
+```rust
+&s1
+```
+
+means:
+
+> "Borrow `s1`, don't take ownership."
+
+So ownership never leaves `s1`.
+
+Visual:
+
+```text
+s1 ------> "hello"
+
+calculate_length()
+      ^
+      |
+   borrowed reference
+```
+
+The function receives:
+
+```rust
+fn calculate_length(s: &String) -> usize
+```
+
+which means:
+
+> "I only want to read the String. I don't want to own it."
+
+After the function returns:
+
+```rust
+println!("{} {}", s1, len);
+```
+
+`s1` is still valid because it was only borrowed.
+
+---
+
+If the function was:
+
+```rust
+fn calculate_length(s: String) -> usize {
+    s.len()
+}
+```
+
+and called like:
+
+```rust
+let len = calculate_length(s1);
+```
+
+then ownership would move into the function and this would fail:
+
+```rust
+println!("{}", s1); // ❌
+```
+
+because `s1` would no longer own the String.
+
+---
+
+### Key Idea
+
+* `s1` → ownership moves
+* `&s1` → immutable borrow (read-only)
+* `&mut s1` → mutable borrow (can modify)
+
+---
+
+# Question 4: Mutable Borrow
+
+What happens here?
+
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    change(&mut s);
+
+    println!("{}", s);
+}
+
+fn change(s: &mut String) {
+    s.push_str(" world");
+}
+```
+
+1. Does it compile?
+2. What is the output?
+3. Why do we need both `mut s` and `&mut s`?
+
+Explain in your own words.
+
+
+// allowed and not allowed in rust
+
+One write (allowed)
+let r1 = &mut s;
+
+Read + write a the same time (not allowed)
+let r1 = &s;
+let r2 = &mut s;
+
+Two write at a same time (not allowed)
+let r1 = &mut s;
+let r2 = &mut s;
+
+

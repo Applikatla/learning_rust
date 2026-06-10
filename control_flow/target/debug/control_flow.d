@@ -1,1 +1,1 @@
-C:\projects\rust\control_flow\target\debug\control_flow.exe: C:\projects\rust\control_flow\src\main.rs
+/home/keshavardhan/Desktop/projects/learning_rust/control_flow/target/debug/control_flow: /home/keshavardhan/Desktop/projects/learning_rust/control_flow/src/main.rs

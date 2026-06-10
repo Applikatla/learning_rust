@@ -1,3 +1,7 @@
 fn main() {
-    println!("Hello, world!");
+    let x = 10;
+    let y = x;
+
+    println!("x = {}", x);
+    println!("y = {}", y);
 }

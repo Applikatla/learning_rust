@@ -3,6 +3,7 @@ fn main() {
     let x = (1, 2, "a");
     println!("X[0] = {}",x.0);
     println!("Hello, world!");
+    println!("{:?}",x.clone());
     //arr
     let arr = [1, 2, 3, 4, 5];
     println!("Arr 1st element: {}", arr[0]);
@@ -11,7 +12,7 @@ fn main() {
     vec.push(1);
     vec.push(2);
     vec.push(3);
-    println!("Vector 1st element: {}", vec[0]);
+    println!("Vector 1st element:arr {}", vec[0]);
     // creating a empty vector
     let mut vec1 = Vec::new();
     vec1.push(2);
@@ -32,7 +33,7 @@ fn main() {
     let mut vec = vec![1, 2, 3, 4, 5];
 
     let slice = &mut vec[2..4]; // Mutable slice to modify elements at indices 2 and 3
-    slice[0] = 10;  // Modify element at index 2
+    slice[0] = 10;  // Modify element at index 2 // with out mut in slice it will give error cannot assign to slice[0] because it is not mutable
     slice[1] = 20;  // Modify element at index 3
 
     println!("{:?}", vec); // Output: [1, 2, 10, 20, 5]

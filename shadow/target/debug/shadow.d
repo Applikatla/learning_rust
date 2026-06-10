@@ -1,1 +1,1 @@
-C:\projects\rust\shadow\target\debug\shadow.exe: C:\projects\rust\shadow\src\main.rs
+/home/keshavardhan/Desktop/projects/learning_rust/shadow/target/debug/shadow: /home/keshavardhan/Desktop/projects/learning_rust/shadow/src/main.rs

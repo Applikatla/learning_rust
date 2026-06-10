@@ -24,7 +24,7 @@ fn main() {
             };
         }
     };
-    println!("The result is: {}", result.0);
+    println!("The result is: {}, {}", result.0, result.1);
     // for loop 
 
     for number in 1..4 {
