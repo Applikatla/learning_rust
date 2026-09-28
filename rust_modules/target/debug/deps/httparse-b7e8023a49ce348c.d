@@ -1,0 +1,10 @@
+/Users/keshavardhan/Desktop/projects/learning_rust/rust_modules/target/debug/deps/httparse-b7e8023a49ce348c.d: /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/lib.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/iter.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/macros.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/mod.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/swar.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/neon.rs
+
+/Users/keshavardhan/Desktop/projects/learning_rust/rust_modules/target/debug/deps/libhttparse-b7e8023a49ce348c.rmeta: /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/lib.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/iter.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/macros.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/mod.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/swar.rs /Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/neon.rs
+
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/lib.rs:
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/iter.rs:
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/macros.rs:
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/mod.rs:
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/swar.rs:
+/Users/keshavardhan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/simd/neon.rs:

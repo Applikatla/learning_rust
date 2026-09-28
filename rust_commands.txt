@@ -1,3 +1,8 @@
 cargo new hello-rust
 cd hello-rust
 cargo run
+cargo add
+cargo update
+cargo check
+cargo remove
+cargo build
